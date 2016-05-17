@@ -32,3 +32,7 @@ setTimeout(function callMe() {
     })(i);
   }
 });
+
+
+process.on('SIGTERM', process.exit);
+process.on('SIGINT', process.exit);
